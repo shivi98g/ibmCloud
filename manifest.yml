@@ -1,5 +1,5 @@
 applications:
 - name: epilepsypredictor
-  memory: 256M
+  memory: 128M
   command: python app.py
   random-route: true
