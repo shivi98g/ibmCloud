@@ -118,7 +118,7 @@ def predictDoctor():
 
 
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
 
    # test_dataset = UCI_epilepsy('test', 'Task1')
 
@@ -126,4 +126,10 @@ if __name__ == '__main__':
     #print("Json")
     #print(type(X))
     #application.run()
-    app.run()#(port=os.getenv('PORT', 8000))
+ #   app.run()#(port=os.getenv('PORT', 8000))
+
+
+port = os.getenv('PORT', '5000')
+
+if __name__ == "__main__":
+  app.run(host='0.0.0.0', port=int(port))
